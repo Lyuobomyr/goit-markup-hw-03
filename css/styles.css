@@ -1,0 +1,386 @@
+:root {
+  --first-color: #2e2f42;
+  --second-color: #434455;
+  --first-background-color: #ffffff;
+  --second-background-color: #2e2f42;
+  --accent-color: #4d5ae5;
+}
+
+/* ====================================================================== */
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  background-color: var(--first-background-color);
+  color: var(--first-color);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid tomato; */
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* ==================================Шапка=============================== */
+
+.cont-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+.logo-studio-top {
+  color: var(--first-color);
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  margin-left: 77px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--first-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-mail,
+.contact-phone {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--second-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--accent-color);
+}
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--accent-color);
+}
+/* ==================================/ Шапка=============================== */
+
+/* ===================================HERO================================ */
+.hero {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  background-color: var(--second-background-color);
+  text-align: center;
+}
+.hero-title {
+  width: 492px;
+  margin: 0 auto 48px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--first-background-color);
+
+  /* outline: 1px solid tomato; */
+}
+
+.hero-btn {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 170px;
+  height: 51px;
+  display: inline-block;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.hero-btn:active {
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
+}
+/* ===================================/ HERO================================ */
+
+/* ================================Наші переваги=========================== */
+
+.title-advantages {
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--first-color);
+}
+.list-advantage {
+  display: flex;
+}
+.item-advantages {
+  width: 264px;
+}
+.item-advantages:not(:last-child) {
+  margin-right: 24px;
+}
+
+.text-advantages {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--second-color);
+}
+/* ================================/ Наші переваги=========================== */
+
+/* =================================Що ми робимо============================= */
+.job-section {
+  padding-bottom: 120px;
+}
+.job-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--first-color);
+}
+.job-list {
+  display: flex;
+  gap: 24px;
+}
+.job-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.job-content {
+  border: 1px solid #e7e9fc;
+}
+
+/* ================================/ Що ми робимо============================= */
+
+/* =================================Наша команда============================== */
+.team-section {
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  flex-basis: calc((100% - 48px) / 3);
+  background-color: var(--first-background-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.employee {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.team-employee {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--first-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--second-color);
+}
+
+/* =================================/ Наша команда============================== */
+
+/* ===================================Футер===================================== */
+
+.footer-space {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--second-background-color);
+}
+.logo-studio-bottom {
+  color: #f4f4fd;
+}
+.footer-text {
+  margin-top: 16px;
+  width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e9fc;
+}
+/* ==================================/ Футер===================================== */
+
+/* .......................................Портфоліо сторінка.................................. */
+
+.portfolio-section {
+  background-color: var(--first-background-color);
+}
+/* ========================================Фільтр=================================== */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  padding-top: 96px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================================/ Фільтр=================================== */
+
+/* ========================================Портфоліо================================== */
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding-bottom: 120px;
+}
+
+.item-portfolio {
+  flex-basis: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.portfolio-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-left: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
+  border-right: 0.5px solid #f4f4fd;
+}
+
+.title-portfolio {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--first-color);
+}
+
+.text-portfolio {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--second-color);
+}
+
+/* ========================================/ Портфоліо================================ */
